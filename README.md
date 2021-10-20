@@ -173,3 +173,5 @@ Halo has a built-in lisp-like scripting language which is used in its campaign m
 Unfortunately, enabling MSAA in the nvidia-settings control panel resulted in a black screen for Halo. FXAA worked.
 
 I hope this has been a useful guide for you. If you have any questions or suggestions, please get in touch. See you ingame!
+
+github.com, cloud.shadowmods.net, drive.google.com, notion.so

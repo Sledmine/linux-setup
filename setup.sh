@@ -1,7 +1,7 @@
 #/bin/bash
 
 # Install utils
-sudo apt install -y luajit wget
+sudo apt install -y luajit wget gettext
 
 # Install gnome tweaks
 #sudo apt install gnome-session gdm3

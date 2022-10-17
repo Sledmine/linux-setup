@@ -6,6 +6,6 @@ curl -s https://api.github.com/repos/ryanoasis/nerd-fonts/releases/latest \
 | xargs wget
 
 # Unzip fonts, install them and refresh cache
-unzip JetBrainsMono.zip -o -d ~/.local/share/fonts
+unzip -o JetBrainsMono.zip -d ~/.local/share/fonts
 sudo fc-cache -fv
 rm JetBrainsMono.zip

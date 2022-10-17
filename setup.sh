@@ -3,14 +3,11 @@
 # Install utils
 sudo apt install -y luajit wget gettext
 
-# Install gnome tweaks
-#sudo apt install gnome-session gdm3
-sudo apt install gnome-tweaks
-git clone https://github.com/home-sweet-gnome/dash-to-panel
-cd dash-to-panel
-make install
-cd ..
-rm -rf dash-to-panel
+# Install theme and icons
+$(which bash) ./theme.sh
+
+# Install software
+$(which bash) ./software.sh
 
 # Install custom fonts
 $(which bash) ./fonts.sh
@@ -18,5 +15,5 @@ $(which bash) ./fonts.sh
 # Install terminal
 $(which bash) ./terminal.sh
 
-# Fix lockscreen monitors
-sudo cp ~/.config/monitors.xml ~gdm/.config/
+# Fix lockscreen monitors (not needed anymore in 22.04)
+#sudo cp ~/.config/monitors.xml ~gdm/.config/

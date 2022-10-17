@@ -5,7 +5,7 @@ sudo apt install -y luajit wget
 
 # Install gnome tweaks
 #sudo apt install gnome-session gdm3
-sudo apt install gnome-tweak-tool
+sudo apt install gnome-tweaks
 git clone https://github.com/home-sweet-gnome/dash-to-panel
 cd dash-to-panel
 make install

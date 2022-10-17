@@ -3,17 +3,14 @@
 # Install utils
 sudo apt install -y luajit wget
 
-# Install gnome
+# Install gnome tweaks
+#sudo apt install gnome-session gdm3
+sudo apt install gnome-tweak-tool
 git clone https://github.com/home-sweet-gnome/dash-to-panel
 cd dash-to-panel
 make install
 cd ..
 rm -rf dash-to-panel
-
-# Install gnome theme
-# Icons: themes/Breeze-Noir-White-Blue.tar.gz
-# Cursor: themes/LyraB-cursors.tar.gz
-# Shell: Skeuos-Blue-Dark.tar.gz
 
 # Install custom fonts
 $(which bash) ./fonts.sh

@@ -20,3 +20,14 @@ tar -C $HOME -h -xzf noisetorch.tgz
 rm noisetorch.tgz
 # Allow noisetorch to capture system resources
 sudo setcap 'CAP_SYS_RESOURCE=+ep' ~/.local/bin/noisetorch
+https://packages.microsoft.com/repos/ms-teams/pool/main/t/teams/teams_1.5.00.23861_amd64.deb
+
+# Install Teams
+curl -s https://packages.microsoft.com/repos/ms-teams/pool/main/t/teams/ \
+| grep -o "teams.*.deb\"" \
+| tail -1 \
+| tr -d \" \
+| xargs printf "https://packages.microsoft.com/repos/ms-teams/pool/main/t/teams/%s" \
+| xargs wget -O teams.deb
+sudo dpkg -i teams.deb
+rm teams.deb

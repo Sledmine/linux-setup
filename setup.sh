@@ -16,7 +16,6 @@ rm -rf dash-to-panel
 # Shell: Skeuos-Blue-Dark.tar.gz
 
 # Install custom fonts
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 $(which bash) ./fonts.sh
 
 # Install terminal

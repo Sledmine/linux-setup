@@ -1,7 +1,7 @@
 #/bin/bash
 
 # Install utils
-sudo apt install luajit wget
+sudo apt install -y luajit wget
 
 # Install gnome
 git clone https://github.com/home-sweet-gnome/dash-to-panel

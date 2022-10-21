@@ -4,11 +4,11 @@
 sudo apt update
 sudo apt install -y luajit wget gettext
 
-# Install terminal
-$(which bash) ./terminal.sh
-
 # Install custom fonts
 $(which bash) ./fonts.sh
+
+# Install terminal
+$(which bash) ./terminal.sh
 
 # Install software
 $(which bash) ./software.sh

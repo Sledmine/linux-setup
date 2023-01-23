@@ -8,4 +8,7 @@ source ~/.zshrc
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
 
 # Install fig
-curl -SsL https://pkg.fig.io/install.sh | bash
+# curl -SsL https://pkg.fig.io/install.sh | bash
+
+# Install zsh-autocomplete
+# https://github.com/marlonrichert/zsh-autocomplete

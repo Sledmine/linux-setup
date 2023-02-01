@@ -19,7 +19,10 @@ gsettings set org.gnome.desktop.interface cursor-size 32
 gsettings set org.gnome.desktop.privacy remember-recent-files false
 
 # Install gtk theme changer
-sudo apt install lxappearance
-sudo apt install gtk-chtheme
-sudo apt install qt5-style-plugins
-sudo apt install qt5ct
+# Check if lsb_release is 20.04
+if [ "$(lsb_release -rs)" = "20.04" ]; then
+    sudo apt install lxappearance
+    sudo apt install gtk-chtheme
+    sudo apt install qt5-style-plugins
+    sudo apt install qt5ct # Requires qt5-default in 22.04, so it is not compatible yet
+fi

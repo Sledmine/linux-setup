@@ -10,3 +10,15 @@ echo "Do not forget to set ZSH_THEME=\"powerlevel10k/powerlevel10k\" in ~/.zshrc
 
 # Install zsh-autocomplete
 # https://github.com/marlonrichert/zsh-autocomplete
+
+# Install exa (ls replacement)
+# https://the.exa.website/
+# Check if lsb_release is 20.04
+if [ "$(lsb_release -rs)" = "20.04" ]; then
+    curl -L https://github.com/ogham/exa/releases/download/v0.10.0/exa-linux-x86_64-v0.10.0.zip -o exa.zip
+    unzip exa.zip -d exa
+    sudo install exa/bin/exa /usr/local/bin
+    rm -rf exa.zip exa
+else
+    sudo apt install -y exa
+fi

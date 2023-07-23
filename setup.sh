@@ -17,4 +17,6 @@ $(which bash) ./software.sh
 $(which bash) ./theme.sh
 
 # Fix lockscreen monitors (not needed anymore in 22.04)
-#sudo cp ~/.config/monitors.xml ~gdm/.config/
+if [ "$(lsb_release -rs)" = "20.04" ]; then
+    sudo cp ~/.config/monitors.xml ~gdm/.config/
+fi

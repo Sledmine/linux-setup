@@ -22,3 +22,6 @@ if [ "$(lsb_release -rs)" = "20.04" ]; then
 else
     sudo apt install -y exa
 fi
+
+# Install vs code nautilus extension (right click open with code)
+wget -qO- https://raw.githubusercontent.com/harry-cpp/code-nautilus/master/install.sh | bash
